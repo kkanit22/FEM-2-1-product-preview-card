@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+	--black: hsl(212, 21%, 14%);
+	--grey: hsl(225, 12%, 48%);
+	--cream: hsl(30, 38%, 92%);
+	--white: hsl(0, 0%, 100%);
+	--green-500: hsl(158, 36%, 37%);
+	--green-700: hsl(158, 42%, 18%);
+	--text-preset-1: 700 2rem/1 "Fraunces", serif;
+	--text-preset-2: 700 0.875rem/1.1 "Montserrat", sans-serif;
+	--text-preset-3: 500 0.875rem/1.6 "Montserrat", sans-serif;
+	--text-preset-4: 500 0.75rem/1.2 "Montserrat", sans-serif; 
+	--text-preset-5: 500 0.8125rem/1.2 "Montserrat", sans-serif;
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--cream);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem 6.7vw;
+}
+
+.product-card {
+	background-color: var(--white);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	width: clamp(0rem, 93.3vw, 28rem);
+}
+
+.product-image {
+	overflow: hidden;
+	width: 100%;
+}
+
+.product-image img {
+	max-width: 100%;
+}
+
+.product-details {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	align-items: flex-start;
+	padding: 2rem;
+	width: 100%;
+}
+
+.product-text {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	align-items: flex-start;
+	font-size: 1rem;
+}
+
+.product-type {
+	color: var(--grey);
+	font: var(--text-preset-4);
+	letter-spacing: 0.33rem;
+}
+
+.product-name {
+	color: var(--black);	
+	font: var(--text-preset-1);
+}
+
+.product-description {
+	color: var(--grey);
+	font: var(--text-preset-3);
+}
+
+.price {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.current-price {
+	color: var(--green-500);
+	font: var(--text-preset-1);
+}
+
+.original-price {
+	color: var(--grey);
+	font: var(--text-preset-5);
+	text-decoration: line-through;
+}
+
+.call-to-action {
+	background-color: var(--green-500);
+	border: none;
+	border-radius: 0.5rem;
+	color: var(--white);
+	font: var(--text-preset-2);
+	padding: 1rem 2rem;
+	width: 100%;
+}
+
+.call-to-action:hover {
+	background-color: var(--green-700);
+	cursor: pointer;
+}
+
+
+.attribution {
+	font-size: 0.6875rem;
+	text-align: center;
+	position: fixed;
+	bottom: 0.25rem;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 480px) {
+	.product-card {
+		flex-wrap: wrap;
+	}
+	.product-image {
+		width: 50%;
+	}
+	.product-details {
+		width: 50%;
+	}
+}
