@@ -64,6 +64,7 @@ body {
 }
 
 .product-text {
+	text-transform: uppercase;
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
