@@ -27,7 +27,7 @@ The resultant component displays an image (sized appropriately for viewport size
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size
-- See hover and focus states for interactive elements
+- See hover and focus states for interactive elements (the Add to Cart button should be a darker green when hovered or focused)
 
 ### Screenshot
 

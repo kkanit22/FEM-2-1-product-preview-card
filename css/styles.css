@@ -64,7 +64,6 @@ body {
 }
 
 .product-text {
-	text-transform: uppercase;
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
@@ -76,6 +75,7 @@ body {
 	color: var(--grey);
 	font: var(--text-preset-4);
 	letter-spacing: 0.33rem;
+	text-transform: uppercase;
 }
 
 .product-name {
